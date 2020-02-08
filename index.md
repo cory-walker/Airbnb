@@ -39,3 +39,5 @@ In this article, we dove into Boston and Seattle Airbnb data from 2016 and 2017.
 
 <h3>What will you book with Airbnb?</h3>
 
+
+
