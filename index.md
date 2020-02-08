@@ -1,3 +1,5 @@
+![](./images/vangogh.jpg)
+<i>Art credit: https://www.theguardian.com/travel/2016/feb/10/van-gogh-your-airbnb-host-art-institute-of-chicago</i>
 <H2>What drives you to book at Airbnb?</h2>
 A data based look at Seattle and Boston's Airbnb data from 2016 and 2017<br><br>
 
