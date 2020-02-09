@@ -47,3 +47,28 @@ For this I circled back on date plotting for a bright graph. Cleaning fees and s
 * Airbnb for providing this data'
 * Pandas documentation authors
 * Stackoverflow, for helping me in almost every coding project
+
+## CRISP-DM notes
+<b>Business Understanding</b><br>
+<i>"Airbnb, Inc. is an online marketplace for arranging or offering lodging, primarily homestays, or tourism experiences. The company does not own any of the real estate listings, nor does it host events; it acts as a broker, receiving commissions from each booking." - Wikipedia</i>
+
+This is hospitality industry data concerning pricing, rental attributes, occupancy, and guest reviews. It can provide us insight into all of those fields, and may be able to show seasonality trends over time.
+
+<b>Data Understanding</b><br>
+The original dataset contains 6 csv files, 3 pertaining to Seattle, and the other to Boston
+* Calendar files contain occupancy over time data
+* listing files contain rental and host attribute information
+* reviews files contain guest reviews and scores
+
+<b>Prepare Data</b><br>
+The airbnb_wrangle.ipynb file contains code to perform some cleaning, and merging the boston and seattle data files into "airbnb_calendar", "airbnb_listings", and airbnb_reviews" csv files<br>
+airbnb_data_investigation.ipynb contains additional cleaning code alongside data modeling, and graphing code.
+
+<b>Data Modeling</b><br>
+A Linear regression was chosen for the listing attributes in order to determine their impact on pricing. Full details, and result set are contained in the airbnb_data_investigation.ipynb file
+
+<b>Evaluate the Results</b><br>
+The graphs and tables are fully shown in the airbnb_data_investigation.ipynb file, a non-technical, simplified recap can be found on my github blog: https://cory-walker.github.io/Airbnb/, and the conclusion is below.<br>
+1. We took a look at occupancy rates over time, which showed a downturn in stays during the winter months
+2. We analyzed what characteristics of a rental are correlated to price, and in what direction. The evidence shows that room type, property type, number of bathrooms, and possibly the cancellation policy have strong influence over pricing.
+3. We studied how cleaning fees and security deposits can have a negative impact on stays, except with a suprising turn during the low season, where rentals with security deposits experience a boon
